@@ -44,3 +44,7 @@
     background-color: #F6F7F9;
 
   }
+
+  :root{
+    --blue_color:rgb(67, 138, 238);
+  }
