@@ -1,46 +1,38 @@
 
-import React from "react";
-import styled from "styled-components";
-import ProfileInfo from "@shared/components/ProfilePageComponents/ProfileInfo";
-import Statistics from "@shared/components/ProfilePageComponents/Statistics";
-import Lessons from "@shared/components/ProfilePageComponents/Lessons";
-import IconButton from "@shared/components/ProfilePageComponents/IconButton";
+import ProfileInfo from "@shared/Components/ProfilePageComponents/ProfileInfo";
+import Statistics from "@shared/Components/ProfilePageComponents/Statistics";
+import Lessons from "@shared/Components/ProfilePageComponents/Lessons";
+import IconButton from "@shared/Components/ProfilePageComponents/IconButton";
 import { IoIosShareAlt } from "react-icons/io";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
+import { ImageDivProfiePage, LeftDivProfilePage, MainDivProfilePage, ProfileDivProfilePage, ProfilePageDiv } from "@shared/styled/ProfilePageStyled";
+import ProfilePic from '../../shared/Images/profile.png'
+import Footer from "@widgets/Footer";
 
-const MainDiv = styled.main`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-`;
-
-const LeftDiv = styled.div`
-  position: relative;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid green;
-  border-radius: 10px;
-`;
 
 const Page = () => {
   return (
-    <MainDiv>
-      <LeftDiv>
+    <ProfilePageDiv>
+    <MainDivProfilePage>
+      <LeftDivProfilePage>
         <IconButton icon={<IoIosShareAlt />} position="left" />
         <IconButton icon={<HiOutlinePencilSquare />} position="right" />
-        <ProfileInfo />
-        <Statistics />
-      </LeftDiv>
+        <ProfileDivProfilePage>
+            <ImageDivProfiePage >
+              <img src={ProfilePic} alt="user-profile" />
+            </ImageDivProfiePage>
+          <ProfileInfo />
+        </ProfileDivProfilePage>
+        <Statistics />  
+      </LeftDivProfilePage>
       <Lessons />
-    </MainDiv>
+    </MainDivProfilePage>
+    <Footer/>
+    </ProfilePageDiv>
   );
 };
 
-export {Page} ;
-
+export { Page };
 
 
 

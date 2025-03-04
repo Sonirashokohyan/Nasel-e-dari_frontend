@@ -1,7 +1,8 @@
 
 
-import UnorderedList from "@shared/components/SettingPageComponent/UnorderedLi";
-import { MainDivSettingPage, OptionsDivSettingPage } from "@shared/styled/SettingsPageStyled";
+import UnorderedList from "@shared/Components/SettingPageComponent/UnorderedLi";
+import { MainDivSettingPage, OptionsDivSettingPage, SettingPageDiv } from "@shared/styled/SettingsPageStyled";
+import Footer from "@widgets/Footer";
 const onChange = (checked: boolean) => {
   console.log(`Switch toggled: ${checked}`);
 };
@@ -23,6 +24,7 @@ const Page = () => {
 
   return (
     <MainDivSettingPage>
+      <SettingPageDiv>
       <OptionsDivSettingPage>
         <h3>Account</h3>
         <UnorderedList items={accountSettings} onChange={onChange} />
@@ -32,6 +34,8 @@ const Page = () => {
         <h3>Preference</h3>
         <UnorderedList items={preferenceSettings} onChange={onChange} />
       </OptionsDivSettingPage>
+      </SettingPageDiv>
+      <Footer/>
     </MainDivSettingPage>
   );
 };

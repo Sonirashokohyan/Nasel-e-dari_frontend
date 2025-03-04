@@ -1,7 +1,4 @@
 import { InfoProfilePage } from "@shared/styled/ProfilePageStyled";
-
-
-
 const ProfileInfo = () => {
   return (
     <InfoProfilePage>

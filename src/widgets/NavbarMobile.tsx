@@ -2,26 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom'; // Import NavLink
 import { IoHome, IoGameController, IoSettingsSharp } from 'react-icons/io5';
 import { FaUser } from 'react-icons/fa';
-
-const BottomNavStyle = styled.nav`
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  border-top: 1px solid rgb(166, 185, 209);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.8rem 0;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-
-  @media (min-width: 500px) {
-    transform: translateY(100%);
-    visibility: hidden;
-  }
-`;
+import { BottomNavStyle } from '@shared/styled/NavbarStyle';
 
 const NavItem = styled(NavLink)`
   display: flex;
