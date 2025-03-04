@@ -4,10 +4,11 @@ import MobileNavbar from "@widgets/NavbarMobile";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components";
 
-const Main = styled.main<{ paddingLeft: string }>`
-  padding-left: ${(props) => props.paddingLeft};
+const Main = styled.main<{ $paddingLeft: string }>`
+  padding-left: ${(props) => props.$paddingLeft};
   transition: padding-left 0.3s ease;
 `;
+
 
 const Layout = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
@@ -35,7 +36,8 @@ const Layout = () => {
     <div>
       {!isMobile && <Navbar />}
       {isMobile && <MobileNavbar />}
-      <Main paddingLeft={paddingLeft}>
+      <Main $paddingLeft={paddingLeft}>
+
         <Outlet />
       </Main>
     </div>
