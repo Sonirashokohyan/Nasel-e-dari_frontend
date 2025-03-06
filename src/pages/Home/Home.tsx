@@ -3,6 +3,7 @@
 
 
 
+import { SentenceBuilder } from "@widgets/lessons/ShuffleWordSelection"
 import styled from "styled-components"
 
 
@@ -13,7 +14,9 @@ const Page = () => {
 
     return (
         <>
-        <div>hi</div>
+        <div>
+            <SentenceBuilder/>
+        </div>
         </>
     )
 }
