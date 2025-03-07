@@ -3,7 +3,8 @@
 
 
 
-import { SentenceBuilder } from "@widgets/lessons/ShuffleWordSelection"
+// import { SentenceBuilder } from "@widgets/lessons/ShuffleWordSelection"
+import ListeningAndPicking from "@widgets/lessons/ListeningAndPicking"
 import styled from "styled-components"
 
 
@@ -15,7 +16,8 @@ const Page = () => {
     return (
         <>
         <div>
-            <SentenceBuilder/>
+            {/* <SentenceBuilder/> */}
+            <ListeningAndPicking/>
         </div>
         </>
     )

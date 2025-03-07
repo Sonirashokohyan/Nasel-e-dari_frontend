@@ -187,13 +187,13 @@ export function SentenceBuilder() {
   return (
     <div>
       {/* Thinking Section with Persian Sentence */}
-      <ThinkingSpeechDiv>
+      {/* <ThinkingSpeechDiv>
         <div><img src={VectorPic} alt="cartoon character" /></div>
         <BlankThinkingDiv>
             <img src={BlankThinking} alt="blank thinking empty speech" />
-            <SentenceContainer>{persianSentence}</SentenceContainer>
         </BlankThinkingDiv>
-      </ThinkingSpeechDiv>
+      </ThinkingSpeechDiv> */}
+            <SentenceContainer>{persianSentence}</SentenceContainer>
       
         
       

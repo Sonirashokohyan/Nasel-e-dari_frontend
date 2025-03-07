@@ -1,8 +1,8 @@
 
-import ProfileInfo from "@shared/Components/ProfilePageComponents/ProfileInfo";
-import Statistics from "@shared/Components/ProfilePageComponents/Statistics";
-import Lessons from "@shared/Components/ProfilePageComponents/Lessons";
-import IconButton from "@shared/Components/ProfilePageComponents/IconButton";
+import ProfileInfo from "@shared/components/ProfilePageComponents/ProfileInfo";
+import Statistics from "@shared/components/ProfilePageComponents/Statistics";
+import Lessons from "@shared/components/ProfilePageComponents/Lessons";
+import IconButton from "@shared/components/ProfilePageComponents/IconButton";
 import { IoIosShareAlt } from "react-icons/io";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
 import { ImageDivProfiePage, LeftDivProfilePage, MainDivProfilePage, ProfileDivProfilePage, ProfilePageDiv } from "@shared/styled/ProfilePageStyled";
