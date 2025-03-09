@@ -33,6 +33,11 @@ const SignupFormStyled = styled.form`
             font-size: 1.5rem;
             color: #201f1f;
         }
+        & h5{
+            padding-left: .5rem;
+            color:rgb(242, 4, 4);
+            font-weight: 400;
+        }
         & p{
             color: #5f5d5d;
             text-align: center;

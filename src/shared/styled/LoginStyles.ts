@@ -27,12 +27,20 @@ const LoginFormStyled = styled.form`
             color: #201f1f;
         }
         & p{
+            display: none;
+        }
+        & h4{
+            color: #4f4d4d ;
+            font-weight: 500;
+        }
+        & h5{
             color: rgb(11, 105, 220);
             text-align: center;
             font-size: .85rem;
             width: 9rem;
             margin-inline: auto;
             transition: hover .2s ease-out;
+            font-weight: 400;
             &:hover{
                 font-weight: 600;
             }
